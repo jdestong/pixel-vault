@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+    
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            border: none;
+            outline: none;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        html {
+            font-size: 62.5%;
+        }
+
+        body {
+            margin-top: 12%;
+            width: 100%;
+            min-height: 100vh;
+            overflow-x: hidden;
+            background-color: black;
+            color: white;
+        }
+
+        header {
+            margin-top: 5px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 200;
+            background-color: black;
+            zoom: 95%;
+        }
+
+        .logo {
+            font-size: 2.5rem;
+            color: #b74b4b;
+            font-weight: 800;
+            cursor: pointer;
+            transition: 0.5s ease;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .imagee {
+            width: 50px;
+            height: auto;
+            display: inline-block; /* Changed from block to inline-block */
+        }
+
+        .logo:hover {
+            transform: scale(1.1);
+        }
+
+        .hamburger {
+            display: none;
+            font-size: 2.5rem;
+            color: white;
+            cursor: pointer;
+            z-index: 201;
+        }
+
+        .nav-container {
+            display: flex;
+            align-items: center;
+        }
+
+        nav a {
+            font-size: 1.3rem;
+            color: white;
+            margin-left: 4rem;
+            font-weight: 500;
+            transition: 0.3s ease;
+            border-bottom: 3px solid transparent;
+        }
+
+        nav a:hover,
+        nav a.active {
+            color: #b74b4b;
+            border-bottom: 3px solid #b74b4b;
+            font-size: 1.9rem;
+            font-weight: bold;
+        }
+
+        .textt, .texttt {
+            margin-top: 50px; /* Reduced from 80px */
+            text-align: center;
+            font-size: 3rem;
+            color: white;
+            font-weight: 600;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-gap: 25px; /* Reverted to original gap */
+            justify-content: center;
+            margin: 80px auto 0;
+            max-width: 90%;
+            padding: 10px;
+        }
+
+        .image-box {
+            width: 100%;
+            height: 450px;  /* Adjusted for typical game cover height */
+            overflow: hidden;
+            border-radius: 5px;
+            position: relative;
+            transition: 0.5s;
+        }
+        
+        .gallery .image-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 5px;
+            transition: 0.5s;
+        }
+
+        .image-box .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(8px);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: 0.5s ease-in-out;
+        }
+
+        .overlay h3 {
+            font-size: 2rem;
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        .image-box:hover .overlay {
+            opacity: 1;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 16px;
+            background: #b74b4b;
+            color: white;
+            font-size: 1.6rem;
+            font-weight: 500;
+            border-radius: 5px;
+            transition: 0.3s ease;
+            text-align: center;
+        }
+
+        .button:hover {
+            background: #922c2c;
+        }
+
+        .search-container {
+            display: flex;
+            align-items: center;
+            border: 1px solid #333;
+            border-radius: 25px;
+            padding: 1px 10px;
+            background: white;
+            margin-left: auto;
+            position: relative;
+        }
+
+        .search-container input {
+            padding: 2px;
+            font-size: 1.6rem;
+        }
+
+        .search-container button {
+            background: none;
+            cursor: pointer;
+        }
+
+        .search-container button img {
+            width: 20px;
+            height: 20px;
+        }
+
+        .suggestions-box {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            background-color: white;
+            border: 1px solid #ccc;
+            border-top: none;
+            max-height: 200px;
+            overflow-y: auto;
+            display: none;
+            z-index: 1000;
+        }
+
+        .suggestions-box div {
+            padding: 10px;
+            cursor: pointer;
+            color: black;
+        }
+
+        .suggestions-box div:hover {
+            background-color: #f0f0f0;
+        }
+
+        .genre-container {
+            width: 100%;
+            margin-top: 80px;
+            padding: 20px 0;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .genres {
+            display: grid;
+            grid-template-columns: repeat(9, 1fr);
+            grid-template-rows: repeat(2, auto);
+            gap: 5px;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            max-width: 700px;
+        }
+
+        .genre {
+            width: 150px;
+            height: 60px;
+            background-color: #b74b4b;
+            color: white;
+            font-size: 1.4rem;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        footer{
+            padding: 5px;
+            color: #000;
+            background-color: #b74b4b;
+            text-align: center;
+        }
+        footer p{
+            color: #000;
+            font-size: 2vb;
+        }
+        
+        .icon-bar {
+            position: fixed;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        
+        .icon-bar {
+            position: fixed;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        
+        .icon-bar a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        
+        #myBtn {
+            display: none; /* Hidden by default */
+            position: fixed; /* Fixed/sticky position */
+            bottom: 20px; /* Place the button at the bottom of the page */
+            right: 30px; /* Place the button 30px from the right */
+            z-index: 99; /* Make sure it does not overlap */
+            border: none; /* Remove borders */
+            outline: none; /* Remove outline */
+            background-color: #b74b4b; /* Set a background color */
+            color: white; /* Text color */
+            cursor: pointer; /* Add a mouse pointer on hover */
+            padding: 15px; /* Some padding */
+            border-radius: 10px; /* Rounded corners */
+            font-size: 18px; /* Increase font size */
+          }
+          
+          #myBtn:hover {
+            background-color: #555; /* Add a dark-grey background on hover */
+          }
+
+        /* Responsive Design */
+        @media (max-width: 1200px) {
+            .gallery {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
+        @media (max-width: 900px) {
+            .gallery {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            header {
+                padding: 1rem;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            body {
+                margin-top: 85%;
+                width: 100%;
+                min-height: 100vh;
+                overflow-x: hidden;
+                background-color: black;
+                color: white;
+            }
+            
+            .genre-container
+
+            .logo {
+                font-size: 2rem;
+            }
+
+            .hamburger {
+                display: block;
+            }
+
+            .nav-container {
+                display: none;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                width: 100%;
+                background-color: #333;
+                flex-direction: column;
+                padding: 1rem 0;
+            }
+
+            .nav-container.active {
+                display: flex;
+            }
+
+            nav a {
+                margin: 1rem 0;
+                font-size: 1.5rem;
+                text-align: center;
+                margin-left: 0;
+            }
+
+            .search-container {
+                margin: 1rem 0;
+                width: 60%;
+                justify-content: center;
+                margin-right: 10px;
+            }
+
+            .gallery {
+                grid-template-columns: repeat(2, 1fr); /* 2 per row on mobile */
+            }
+
+            .image-box {
+                height: 250px;
+            }
+
+            .genres {
+                grid-template-columns: repeat(3, 1fr);
+                max-width: 100%;
+                padding: 0 10px;
+            }
+
+            .genre {
+                width: 100%;
+                font-size: 1.6rem;
+                height: 60px;
+            }
+        }
+
+        @media (max-width: 400px) {
+            .gallery {
+                grid-template-columns: repeat(2, 1fr); 
+            }
+
+            .body {
+                margin-top: 12%;
+            }
+
+            .image-box {
+                height: 280px;
+            }
+
+            .genres {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
