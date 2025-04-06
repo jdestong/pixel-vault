@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NBSU</title>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 62.5%;
+}
+
+header {
+    position: static;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 200;
+    background-color: #1a1a1a;
+}
+
+.logo {
+    font-size: 3rem;
+    color: #b74b4b;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a;
+    color: white;
+    text-align: center;
+    background: url('https://e1.pxfuel.com/desktop-wallpaper/465/346/desktop-wallpaper-nfs-underground-cover-remake-by-nfscars-nfs-underground.jpg') 
+        no-repeat center center fixed;
+    background-size: cover;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    text-align: center;
+    padding: 90px 20px;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 3em;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+/* Media Section (Trailer + Screenshots) */
+.media-container {
+    position: relative;
+    width: 90%;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.media-wrapper {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 10px;
+    scrollbar-width: thin; /* Visible scrollbar */
+    scrollbar-color: #888 #333;
+}
+
+.media-wrapper::-webkit-scrollbar {
+    height: 10px;
+}
+
+.media-wrapper::-webkit-scrollbar-track {
+    background: #333;
+    border-radius: 10px;
+}
+
+.media-wrapper::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+.media-wrapper::-webkit-scrollbar-thumb:hover {
+    background: #aaa;
+}
+
+.media-item {
+    flex: 0 0 auto;
+    width: 800px;
+    height: 450px;
+    border-radius: 10px;
+    border: 2px solid white;
+    transition: transform 0.3s ease-in-out;
+}
+
+.media-item:hover {
+    transform: scale(1.05);
+}
+
+/* Scroll Hint */
+.scroll-hint {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #bbb;
+}
+
+/* Game Description */
+.description {
+    margin: 40px 0;
+    text-align: left;
+    padding: 20px;
+    background-color: #282828;
+    border-radius: 10px;
+}
+
+/* System Requirements */
+.requirements {
+    background: #333;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    text-align: left;
+    font-size: 20px; /* Increased font size */
+}
+
+.requirements h2, 
+.requirements h3 {
+    font-size: 24px; /* Larger section titles */
+    font-weight: bold;
+}
+
+.requirements ul {
+    padding-left: 20px; /* Adjust indentation */
+    margin-left: 0; /* Reset any default margin */
+    list-style-position: inside; /* Keeps bullet points aligned */
+}
+
+.requirements li {
+    text-align: left; /* Ensure individual list items align left */
+    font-size: 18px; /* Increased font size for better readability */
+}
+
+.requirements p strong {
+    font-size: 20px;
+    font-weight: bold;
+    display: block; /* Makes them appear on a new line */
+    margin-top: 10px; /* Adds spacing above for better readability */
+}
+
+/* Navigation */
+nav a {
+    font-size: 1.8rem;
+    color: white;
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+nav a:hover,
+nav a.active {
+    color: #b74b4b;
+    border-bottom: 3px solid #b74b4b;
+}
+
+    </style>
+</head>
+
+<header class="header">    
+    <a href="try.html" class="logo">Pixel Vault</a>
+    <nav>
+        <a href="try.html"> Home</a>
+        <a href="#" class="active">Gallery</a>
+        <a href="pixelvault-aboutus.html" >About Us</a>
+        <a href="pixelpage2.html" >Go Back</a>
+    </nav>
+</header>
+<body>
+
+    <div class="hero">
+        <img src="https://cdn2.steamgriddb.com/logo_thumb/750263dbb2fb8547bdd810ee11a08c7a.png" alt="title style=">
+    </div>
+
+    <div class="container">
+        <div class="media-container">
+            <div class="media-wrapper">
+                <iframe width="560" height="450" src="https://www.youtube.com/embed/WWiTSTnfwv0?si=fCFh0i343XbQ9Qnu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <img class="media-item" src="https://pa1.aminoapps.com/6548/1b088ec6a1408ffe79af09235daf13b5dee131a4_00.gif" alt="Screenshot 1">
+                <img class="media-item" src="https://assets1.ignimgs.com/thumbs/userUploaded/2015/11/3/nfs1102151280-1446534707010.jpg" alt="Screenshot 2">
+                <img class="media-item" src="https://nfsmods.xyz/uploads/thumbnails/KyoriAsh-a48723b6cfbe11a7abd77e5bf7f7ba59.webp" alt="Screenshot 3">
+                <img class="media-item" src="https://img.utdstc.com/screen/f18/209/f18209f34c0a3e6920960a09c81bb2bd27094265c4b020d09b8a29ea1678aae7:600" alt="Screenshot 4">
+                <img class="media-item" src="https://static1.thegamerimages.com/wordpress/wp-content/uploads/2021/11/Need-For-Speed-Underground-2-Fan-Video-Recreates-Iconic-Drift-Route-Through-Jackson-Heights.jpg" alt="Screenshot 5">
+            </div>
+            <div class="scroll-hint">← Scroll sideways to view more →</div>
+        </div>
+
+        
+        <div class="description">
+            <h2>About the Game</h2>
+            <p style="font-size: 24px;">Need for Speed: Underground is a racing video game released in 2003 by EA Games, marking a major shift in the Need for Speed series towards street racing culture. The game features a deep car customization system, allowing players to modify their vehicles' performance and appearance with aftermarket parts, neon lights, vinyls, and body kits.</p>
+        </div>
+
+        
+        <div class="requirements">
+            <h2>NFS Underground System Requirements</h2>
+            
+            <h3>PC Requirements</h3>
+            <p><strong>Minimum:</strong></p>
+            <ul>
+                <li>OS: Windows 98/ME/2000/XP</li>
+                <li>Processor: Pentium III or AMD Athlon 700 MHz</li>
+                <li>RAM: 128 MB</li>
+                <li>Graphics: 32 MB DirectX 9.0c compatible video card</li>
+                <li>Storage: 2 GB available space</li>
+            </ul>
+    
+            <p><strong>Recommended:</strong></p>
+            <ul>
+                <li>OS: 64-bit Windows Vista, Windows 7, or Windows 8</li>
+                <li>Processor: Pentium III or AMD Athlon 1.5 GHz</li>
+                <li>Memory: 2 GB RAM</li>
+                <li>Graphics: 64 MB DirectX 9.0c compatible video card</li>
+                <li>Storage: 2 GB available space</li>
+            </ul>
+            
+            <h3>Console Requirements</h3>
+            <p><strong>A PlayStation 2 console & A PS2-compatible controller</strong></p>
+            <ul>
+                <li>Requires respective console</li>
+                <li>Ensure sufficient storage space for installation and updates</li>
+            </ul>
+        </div>
+
+        <footer>
+            <p style="color: black; font-size: 2vb;">Disclaimer: All the images used are for educational purposes only. All rights reserved to the owners of the images used.
+            </p>
+        </footer>
+</body>
+</html>

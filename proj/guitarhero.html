@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="gamepagestyle.css">
+    <title>Game Showcase</title>
+    <style>
+    </style>
+</head>
+
+<header class="header">
+    <a href="try.html" class="logo">Pixel Vault</a>
+    <div class="hamburger" onclick="toggleNav()">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <nav>
+        <a href="try.html">Home</a>
+        <a href="#" class="active">Gallery</a>
+        <a href="pixelvault-aboutus.html">About Us</a>
+        <a href="pixelpage2.html">Go Back</a>
+    </nav>
+</header>
+<body style="background-image: url('https://wallpaperaccess.com/full/2660431.jpg'); background-size: cover; background-position: center center; background-repeat: no-repeat; background-attachment: fixed;">
+    <div class="hero">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Guitar_Hero_Live_Logo.svg/250px-Guitar_Hero_Live_Logo.svg.png" alt="title style=">
+    </div>
+
+    <div class="container">
+        <div class="media-container">
+            <div class="media-wrapper">
+                <iframe src="https://www.youtube.com/embed/zQtHkBh2bzY?si=e5QpRgztgRLMCmuK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <img class="media-item" src="https://www.gamespot.com/a/uploads/original/gamespot/images/2007/242/reviews/820239-939093_20070831_001.jpg" alt="Screenshot 1">
+                <img class="media-item" src="https://th.bing.com/th/id/OIP.FPD-b56a1MSvWjUDExCefgHaFJ?w=691&h=480&rs=1&pid=ImgDetMain" alt="Screenshot 2">
+                <img class="media-item" src="https://i.ytimg.com/vi/5CPKEOvL3Us/maxresdefault.jpg" alt="screenshot 3">
+                <img class="media-item" src="https://i.ytimg.com/vi/8JK50W5Q_vg/hqdefault.jpg" alt="Screenshot 4">
+                <img class="media-item" src="https://th.bing.com/th/id/R.25601a906999459503f4db4ea02e2eb0?rik=rBwmOO8QgtIWbA&riu=http%3a%2f%2fvignette1.wikia.nocookie.net%2fguitarhero%2fimages%2f5%2f56%2fDrums-GHWT.jpg%2frevision%2flatest%3fcb%3d20101125070946&ehk=TIDnxiaxaKPMgk04DBhtxYfCRd6uR%2fzlmlgOwnT%2fk8s%3d&risl=&pid=ImgRaw&r=0" alt="Screenshot 5">
+            </div>
+
+        
+            <div class="description">
+                <h2>About the Game</h2>
+                <p style="font-size: 24px;">
+                    Guitar Hero is a popular rhythm game series that was first released in 2005. Developed by Harmonix and 
+                    published by RedOctane, the game allows players to simulate playing a guitar using a guitar-shaped 
+                    controller. The gameplay involves pressing buttons on the controller in time with scrolling notes on 
+                    the screen, matching the rhythm of various rock songs. Players can choose from a wide range of songs 
+                    spanning different genres and decades, and the game features both single-player and multiplayer modes. 
+                    Guitar Hero also introduced features like hammer-ons, pull-offs, and the use of a whammy bar to alter 
+                    the pitch of notes, adding to the realism of the guitar-playing experience.
+                </p>
+            </div>
+            
+            <div class="requirements">
+                <h2>Guitar Hero System Requirements</h2>
+            
+                <h3>PC Requirements</h3>
+            
+                <p><strong>Minimum:</strong></p>
+                <ul>
+                    <li>OS: Windows XP (Service Pack 2), Windows Vista</li>
+                    <li>Processor: Intel Pentium D (Dual Core) 2.8 GHz or AMD Athlon 3500+</li>
+                    <li>Memory: 1 GB RAM (XP), 2 GB RAM (Vista)</li>
+                    <li>Graphics: 3D Hardware Accelerator Card Required – 100% DirectX 9.0c compatible 128 MB Video Memory (NVIDIA GeForce 7600+ / ATI Radeon X800+)</li>
+                    <li>DirectX: Version 9.0c</li>
+                    <li>Storage: 5.1 GB + 1 GB Swap File</li>
+                    <li>Sound: DirectX 9.0c compatible sound card</li>
+                    <li>Optical Drive: 8x DVD-ROM drive required to install and play</li>
+                </ul>
+            
+                <p><strong>Recommended:</strong></p>
+                <ul>
+                    <li>OS: Windows XP (Service Pack 2), Windows Vista</li>
+                    <li>Processor: Intel Core 2 Duo 2.6 GHz or AMD Athlon X2 Dual-Core 5200+</li>
+                    <li>Memory: 2 GB RAM</li>
+                    <li>Graphics: 512 MB 3D Hardware Accelerator Card with Shader 3.0 support (NVIDIA GeForce 8800 GT / ATI Radeon HD 3870)</li>
+                    <li>DirectX: Version 9.0c</li>
+                    <li>Storage: 5.1 GB + 1 GB Swap File</li>
+                    <li>Sound: DirectX 9.0c compatible sound card</li>
+                    <li>Optical Drive: 8x DVD-ROM drive required to install and play</li>
+                </ul>
+            
+                <h3>Console Availability</h3>
+                <ul>
+                    <li>PlayStation 2</li>
+                    <li>PlayStation 3</li>
+                    <li>PlayStation 4</li>
+                    <li>PlayStation 5</li>
+                    <li>Xbox 360</li>
+                    <li>Xbox One</li>
+                </ul>
+            </div>
+            
+            
+        <br>
+        <footer>
+            <strong style="color: white; font-size: 2vb; padding: 5px; background-color: #333;">Disclaimer: All the images used are for educational purposes only. All rights reserved to the owners of the images used.
+            </strong>
+        </footer>
+        
+        <script>
+            function toggleNav() {
+                const nav = document.querySelector('nav');
+                nav.classList.toggle('active');
+            }
+        </script>
+</body>
+</html>

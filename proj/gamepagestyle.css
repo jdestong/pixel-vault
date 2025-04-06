@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 62.5%;
+}
+
+header {
+    margin-top: 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 200;
+    background-color: #1a1a1a;
+}
+
+.logo {
+    font-size: 3rem;
+    color: #b74b4b;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a;
+    color: white;
+    text-align: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensures the content takes the full height */
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    text-align: center;
+    padding: 90px 20px;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 3em;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+/* Media Section (Trailer + Screenshots) */
+.media-container {
+    position: relative;
+    width: 100%;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.media-wrapper {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    gap: 10px;
+    scrollbar-width: thin;
+    scrollbar-color: #888 #333;
+}
+
+.media-wrapper::-webkit-scrollbar {
+    height: 10px;
+}
+
+.media-wrapper::-webkit-scrollbar-track {
+    background: #333;
+    border-radius: 10px;
+}
+
+.media-wrapper::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+.media-wrapper::-webkit-scrollbar-thumb:hover {
+    background: #aaa;
+}
+
+.media-item {
+    flex: 0 0 auto;
+    width: 800px;
+    height: 450px;
+    border-radius: 10px;
+    border: 2px solid white;
+    transition: transform 0.3s ease-in-out;
+}
+
+.media-item:hover {
+    transform: scale(1.05);
+}
+
+/* Scroll Hint */
+.scroll-hint {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #bbb;
+}
+
+/* Game Description */
+.description {
+    margin: 40px 0;
+    text-align: left;
+    padding: 20px;
+    background-color: #282828;
+    border-radius: 10px;
+}
+
+.description h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* System Requirements */
+.requirements {
+    background: #333;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    text-align: left;
+    font-size: 20px;
+}
+
+.requirements h2, 
+.requirements h3 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.requirements ul {
+    padding-left: 20px;
+    margin-left: 0;
+    list-style-position: inside;
+}
+
+.requirements li {
+    text-align: left;
+    font-size: 18px;
+}
+
+.requirements p strong {
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+}
+
+nav a {
+    font-size: 1.8rem;
+    color: white;
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+nav a:hover,
+nav a.active {
+    color: #b74b4b;
+    border-bottom: 3px solid #b74b4b;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.hamburger div {
+    width: 30px;
+    height: 4px;
+    background-color: white;
+}
+
+@media (max-width: 768px) {
+    .hero img {
+        max-width: 80%; /* Reduces size for mobile devices */
+    }
+
+    body {
+        justify-content: flex-start; /* Adjusts to not be too far down on mobile */
+        align-items: center;
+    }
+
+    .container {
+        width: 95%; /* Increases the width to take more space on mobile */
+        padding: 10px;
+    }
+
+    /* Update the media-wrapper for better mobile layout */
+    .media-wrapper {
+        display: flex;
+        flex-wrap: wrap; /* Allows items to wrap to new lines */
+        gap: 10px;
+        justify-content: center; /* Centers the content horizontally */
+    }
+
+    .media-item {
+        width: 100%; /* Makes media items take full width */
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    iframe {
+        width: 100%; /* Makes sure iframe width adjusts for mobile */
+        height: auto; /* Makes iframe responsive */
+        aspect-ratio: 16/9; /* Ensures a proper aspect ratio */
+    }
+}
+
+@media (max-width: 480px) {
+    .hero img {
+        max-width: 70%; /* Further reduce size for very small screens */
+    }
+
+    .container {
+        width: 100%;
+        padding: 5px;
+    }
+
+    .media-container {
+        padding-left: 0; /* Reduce left padding for smaller screens */
+    }
+
+    .media-item {
+        width: 100%; /* Makes media items take full width on very small screens */
+    }
+
+    iframe {
+        width: 100%; /* Ensures iframe fills the screen */
+        height: auto; /* Ensures responsive height */
+        aspect-ratio: 16/9; /* Keeps aspect ratio consistent */
+    }
+
+    .description p {
+        font-size: 16px;
+    }
+
+    .requirements ul {
+        font-size: 14px;
+    }
+
+    .scroll-hint {
+        font-size: 12px;
+    }
+}
+
+
+
+nav {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    background-color: #1a1a1a;
+    width: 100%;
+    z-index: 10;
+}
+
+nav.active {
+    display: flex;
+}
+
+nav a {
+    margin-left: 0;
+    margin-top: 2rem;
+}
+
+.hamburger {
+    display: flex;
+}
