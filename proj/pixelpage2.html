@@ -1,0 +1,1084 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="pixelpage2.css">
+    <title>Pixel</title>
+</head>
+<header>
+    <div class="genre-container">
+        <div class="genres">
+            <div class="genre" data-target="sports">SPORTS</div>
+            <div class="genre" data-target="action-adventure">ACTION-ADVENTURE</div>
+            <div class="genre" data-target="platformer">PLATFORMER</div>
+            <div class="genre" data-target="fighting">FIGHTING</div>
+            <div class="genre" data-target="shooter">SHOOTER</div>
+            <div class="genre" data-target="horror">HORROR</div>
+            <div class="genre" data-target="moba">MOBA</div>
+            <div class="genre" data-target="gacha">GACHA</div>
+            <div class="genre" data-target="rhythm">RHYTHM</div>
+        </div>
+    </div>
+</header>
+
+<div style="
+  position: fixed;
+  top: 40%;
+  left: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 1000;
+">
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fpixel-vault-eight.vercel.app%2Ftry.html&amp;src=sdkpreparse" target="_blank"
+     style="background: #4267B2; color: white; padding: 10px; border-radius: 50%; text-align: center; text-decoration: none; font-size: 18px;">
+    <i class="fab fa-facebook-f"></i>
+  </a>
+
+  <a href="https://twitter.com/intent/tweet?url=https://pixel-vault-eight.vercel.app/try.html&text=Check%20this%20out!" target="_blank"
+     style="background: #000000; color: white; padding: 10px; border-radius: 50%; text-align: center; text-decoration: none; font-size: 18px;">
+    <i class="fab fa-x-twitter"></i>
+  </a>
+
+  <button onclick="navigator.clipboard.writeText(window.location.href); alert('Link copied!');"
+     style="background: #4CAF50; color: white; padding: 10px; border: none; border-radius: 50%; font-size: 18px; cursor: pointer;">
+    <i class="fas fa-link"></i>
+  </button>
+</div>
+
+<header>
+    <header>
+        <a href="try.html" class="logo">
+            <img class="imagee" src="Logo.png" alt="logo"> 
+            <span>Pixel Vault</span>
+        </a>
+        <form class="search-container" onsubmit="searchGame(event)">
+            <input type="text" id="search-input" placeholder="Search for a game..." required oninput="showSuggestions()">
+            <button type="submit">
+                <img src="https://cdn-icons-png.flaticon.com/512/149/149852.png" alt="Search">
+            </button>
+            <div id="suggestions" class="suggestions-box"></div>
+        </form>
+        <div class="hamburger"><i class="fas fa-bars"></i></div>
+        <div class="nav-search-container">
+            <nav class="nav-container">
+                <a href="try.html">Home</a>
+                <a href="#" class="active">Gallery</a>
+                <a href="pixelvault-aboutus.html">About Us</a>
+            </nav>
+        </div>
+    </header>
+    <br>
+    <br>
+    <br>
+</header>
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Scroll to top</button>
+    <div id="sports" class="textt">
+        <h1>SPORTS</h1>
+    </div>
+    <div class="gallery" >
+        <div class="image-box">
+            <img src="https://cdn2.steamgriddb.com/thumb/863fdb719f9f659a50266e85255bae68.jpg" alt="NBA 2K14">
+            <div class="overlay">
+                <h2>NBA 2k14</h2>
+                <a href="nba2k14.html" class="button">View More</a>
+            </div>   
+        </div>
+        <div class="image-box">
+            <img src="https://cdn2.steamgriddb.com/thumb/2439c71f14c8db4ac5208cc84113cffc.jpg" alt="NBA 2K15">
+            <div class="overlay">
+                <h2>NBA 2k15</h2>
+                <a href="nba2k15.html" class="button">View More</a>
+            </div>
+        </div>
+        <div class="image-box">
+            <img src="https://cdn2.steamgriddb.com/thumb/07ebae5de4be22e8d3916839a654d94a.jpg" alt="NBA 2K16">
+            <div class="overlay">
+                <h2>NBA 2k16</h2>
+                <a href="nba2k16.html" class="button">View More</a>
+            </div>
+        </div>
+        <div class="image-box">
+            <img src="https://cdn2.steamgriddb.com/thumb/e3529dd70933e19c7f87d1d71ecc37af.jpg" alt="NBA 2K17">
+            <div class="overlay">
+                <h2>NBA 2k17</h2>
+                <a href="nba2k17.html" class="button">View More</a>
+            </div>
+        </div>
+        <div class="image-box">
+            <img src="https://cdn2.steamgriddb.com/thumb/f5c69b3fa7fdcca6aeed80d7970f309f.jpg" alt="NBA 2K18">
+            <div class="overlay">
+                <h2>NBA 2k18</h2>
+                <a href="nba2k18.html" class="button">View More</a>
+            </div>
+        </div>
+
+
+        <div class="image-box">
+            <img src="https://cdn2.steamgriddb.com/thumb/1d8e91a64c6242d9bab015a34baef973.jpg" alt="NBA 2K19">
+            <div class="overlay">
+                <h2>NBA 2k19</h2>
+                <a href="nba2k19.html" class="button">View More</a>
+            </div>
+        </div>
+        <div class="image-box">
+            <img src="https://cdn2.steamgriddb.com/thumb/3bcb1c45be20981510a4462a8c70db0f.jpg" alt="NBA 2K20">
+            <div class="overlay">
+                <h2>NBA 2K20</h2>
+                <a href="nba2k20.html" class="button">View More</a>
+            </div>
+        </div>
+        <div class="image-box">
+            <img src="https://cdn2.steamgriddb.com/thumb/572386682fccec7f1a07b7c2bf18284e.jpg" alt="NBA 2K21">
+            <div class="overlay">
+                <h2>NBA 2K21</h2>
+                <a href="nba2k21.html" class="button">View More</a>
+            </div>
+        </div>
+        <div class="image-box">
+            <img src="https://cdn2.steamgriddb.com/thumb/e8cdfa5d41d4aaa7459f99d80c2b9627.jpg" alt="NBA 2K22">
+            <div class="overlay">
+                <h2>NBA 2K22</h2>
+                <a href="nba2k22.html" class="button">View More</a>
+            </div>
+        </div>
+        <div class="image-box">
+            <img src="https://cdn2.steamgriddb.com/thumb/259d0282967316a406e51b9fa2e7283d.jpg" alt="NBA 2K23">
+            <div class="overlay">
+                <h2>NBA 2K23</h2>
+                <a href="nba2k23.html" class="button">View More</a>
+            </div>
+        </div>
+
+        <div class="image-box">
+            <img src="https://cdn2.steamgriddb.com/thumb/79671fc520653ffa0be644e94a26b985.jpg" alt="Asphalt Legends Unite">
+            <div class="overlay">
+                <h2>Asphalt Legends Unite</h2>
+                <a href="Asphalt.html" class="button">View More</a>
+            </div>
+        </div>
+        <div class="image-box">
+            <img src="https://cdn2.steamgriddb.com/thumb/bcee397c146136f405865adcf1655207.jpg" alt="NFS: Most Wanted">
+            <div class="overlay">
+                <h2>Need for Speed: Most Wanted</h2>
+                <a href="NeedforSpeed.html" class="button">View More</a>
+            </div>
+        </div>
+        <div class="image-box">
+            <img src="https://cdn2.steamgriddb.com/thumb/0959494b92b81147796ce901ea4f9927.jpg" alt="NFS: Underground">  
+            <div class="overlay">
+                <h2>Need for Speed: Underground</h2>
+                <a href="NfsUnderground.html" class="button">View More</a>
+            </div>
+        </div>
+        <div class="image-box">
+            <img src="https://i.ytimg.com/vi/QQIKnjp8quQ/maxresdefault.jpg" alt="Real Boxing">
+            <div class="overlay">
+                <h2>Real Boxing</h2>
+                <a href="realboxing.html" class="button">View More</a>
+            </div>
+        </div>
+        <div class="image-box">
+            <img src="https://image.api.playstation.com/vulcan/ap/rnd/202409/1317/7e17c704fdb79e5f57be69bb4d8fbc07dda7abb85336b705.png" alt="FIFA FC25">
+            <div class="overlay">
+                <h2>FIFA FC25</h2>
+                <a href="fc25.html" class="button">View More</a>
+            </div>
+        </div>
+    
+
+
+        <div class="image-box">
+            <img src="https://gamegator.net/_next/image?url=https%3A%2F%2Fimages.gamegator.net%2Fco1vua&w=640&q=75" alt="Golf Spin">
+            <div class="overlay">
+                <h2>Golf Spin</h2>
+                <a href="golfit.html" class="button">View More</a>
+            </div>
+        </div>
+        <div class="image-box">
+            <img src="https://mms.businesswire.com/media/20240312349252/en/2062920/4/TOPSPIN2K25-DELUXE-RATING_E_FOBS-FLAT-STATIC-ENUS-ESRB-AG-1650x2250-R2.jpg" alt="TOPSPIN 2k25">
+            <div class="overlay">
+                <h2>TOPSPIN 2k25</h2>
+                <a href="topspin.html" class="button">View More</a>
+            </div>
+        </div>
+        <div class="image-box">
+            <img src="https://assets-prd.ignimgs.com/2021/12/17/tony-hawk-prp-skater-2-1639763193495.jpg" alt="Tony Hawk Skater2">
+            <div class="overlay">
+                <h2>Tony Hawk Skater2</h2>
+                <a href="tonyhawk.html" class="button">View More</a>
+            </div>
+        </div>
+        <div class="image-box">
+            <img src="https://assets-prd.ignimgs.com/2024/07/01/rugby-25-button-1719584246745-1719853171883.jpg" alt="RUGBY25">
+            <div class="overlay">
+                <h2>RUGBY25</h2>
+                <a href="rugby25.html" class="button">View More</a>
+            </div>
+        </div>
+        <div class="image-box">
+            <img src="https://mlpnk72yciwc.i.optimole.com/cqhiHLc.IIZS~2ef73/w:auto/h:auto/q:75/https://bleedingcool.com/wp-content/uploads/2024/04/F1-24-Standard-Edition-Cover.jpg" alt="F1 24">
+            <div class="overlay">
+                <h2>F1 24</h2>
+                <a href="F124.html" class="button">View More</a>
+            </div>
+        </div>
+    </div> 
+    <div id="fighting" class="textt">
+        <h1>FIGHTING</h1>
+    </div>
+    <div class="gallery" >
+
+       <div class="image-box">
+           <img src="https://image.api.playstation.com/vulcan/ap/rnd/202212/2101/CxnQHVI3gzboBTHqEEQVWZJ6.png" alt="Tekken 8">
+           <div class="overlay">
+               <h2>Tekken 8</h2>
+               <a href="Tekken 8.html" class="button">View More</a>
+           </div>
+       </div>
+       <div class="image-box">
+           <img src="https://upload.wikimedia.org/wikipedia/en/9/94/Street_Fighter_6_box_art.jpg" alt="Street Fighter 6">
+           <div class="overlay">
+               <h2>Street Fighter 6</h2>
+               <a href="Street Fighter 6.html" class="button">View More</a>
+           </div>
+       </div>
+       <div class="image-box">
+           <img src="https://assets-prd.ignimgs.com/2022/09/27/blazbluecalamity-1664237761393.jpg" alt="Blazblue: Calamity Trigger">
+           <div class="overlay">
+               <h2>Blazblue: Calamity Trigger</h2>
+               <a href="blazblue.html" class="button">View More</a>
+           </div>
+       </div>
+       <div class="image-box">
+           <img src="https://upload.wikimedia.org/wikipedia/en/7/7d/Guilty_Gear_Strive.jpg" alt="Guilty Gear">
+           <div class="overlay">
+               <h2>Guilty Gear</h2>
+               <a href="guiltygear.html" class="button">View More</a>
+           </div>
+       </div>
+       <div class="image-box">
+           <img src="https://upload.wikimedia.org/wikipedia/en/d/df/KOF_XV.png" alt="King of Fighters">
+           <div class="overlay">
+               <h2>King of Fighters</h2>
+               <a href="kofxv.html" class="button">View More</a>
+           </div>
+       </div>
+   
+
+
+       <div class="image-box">
+           <img src="https://steamuserimages-a.akamaihd.net/ugc/1749054854237496097/463857E7A57D505F9AA29A5B4BFF62E71CECA5F3/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true" alt="Super Smash Bros">
+           <div class="overlay">
+               <h2>Super Smash Bros</h2>
+               <a href="supersmashbros.html" class="button">View More</a>
+           </div>
+       </div>
+       <div class="image-box">
+           <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1971870/capsule_616x353.jpg?t=1729006754" alt="Mortal Kombat 1">
+           <div class="overlay">
+               <h2>Mortal Kombat 1</h2>
+               <a href="mk1.html" class="button">View More</a>
+           </div>
+       </div>
+       <div class="image-box">
+           <img src="https://upload.wikimedia.org/wikipedia/en/9/91/Persona4Arena.png" alt="Persona 4 Arena">
+           <div class="overlay">
+               <h2>Persona 4: Arena</h2>
+               <a href="p4arena.html" class="button">View More</a>
+           </div>
+       </div>
+       <div class="image-box">
+           <img src="https://assets1.ignimgs.com/2015/07/08/naruto-shippuden-ultimate-ninja-storm-4-button-2jpg-1b3f5a.jpg" alt="Naruto Ultimate Ninja Storm">
+           <div class="overlay">
+               <h2>Naruto Ultimate Ninja Storm 4</h2>
+               <a href="naruto ultimate ninja.html" class="button">View More</a>
+           </div>
+       </div>
+       <div class="image-box">
+           <img src="https://upload.wikimedia.org/wikipedia/en/f/fb/Skullgirls_cover.png" alt="Skull Girls">
+           <div class="overlay">
+               <h2>Skullgirls</h2>
+               <a href="skullgirls.html" class="button">View More</a>
+           </div>
+       </div>
+   
+   
+           <div class="image-box">
+               <img src="https://store-images.s-microsoft.com/image/apps.26109.65168763453942994.59189b32-08e8-4571-bf29-57c880d52d11.b2ab7d45-dc97-4459-97d8-74e150cf1d3b" alt="Stick Fight the game">
+               <div class="overlay">
+                   <h2>Stick Fight The Game</h2>
+                   <a href="stickfight.html" class="button">View More</a>
+               </div>
+           </div>
+           <div class="image-box">
+               <img src="https://m.media-amazon.com/images/M/MV5BZmQxOTY3NzAtZWQ0NC00ZmZjLThmMmItOTMyNGE3MDJlOTJiXkEyXkFqcGc@._V1_.jpg" alt="Marvel vs Capcom">
+               <div class="overlay">
+                   <h2>Marvel vs Capcom</h2>
+                   <a href="marvel vs capcom.html" class="button">View More</a>
+               </div>
+           </div>
+           <div class="image-box">
+               <img src="https://image.api.playstation.com/cdn/UP5541/CUSA15915_00/arzhD8KTveR7EGP5S2BfeFavRwiAxxeo.png" alt="Samurai Showdown">
+               <div class="overlay">
+                   <h2>Samurai Shodown</h2>
+                   <a href="samurai showdown.html" class="button">View More</a>
+               </div>
+           </div>
+           <div class="image-box">
+               <img src="https://m.media-amazon.com/images/I/81dq4sWAGEL._AC_UF894,1000_QL80_.jpg" alt="Soul Calibur 6">
+               <div class="overlay">
+                   <h2>Soul Calibur 6</h2>
+                   <a href="soul calibur 6.html" class="button">View More</a>
+               </div>
+           </div>
+           <div class="image-box">
+               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEaTHSE1Lpg5MoxBDxdUwhwKdRk2aqC-z_vA&s" alt="Shadow Fight 2">
+               <div class="overlay">
+                   <h2>Shadow Fight 2</h2>
+                   <a href="shadowfight2.html" class="button">View More</a>
+               </div>
+           </div>
+   
+   
+           <div class="image-box">
+                   <img src="https://upload.wikimedia.org/wikipedia/en/a/ad/DBFZ_cover_art.jpg" alt="Dragon Ball FighterZ">
+                   <div class="overlay">
+                       <h2>Dragon Ball FighterZ</h2>
+                       <a href="dragonballfigtherZ.html" class="button">View More</a>
+                   </div>
+               </div>
+               <div class="image-box">
+                   <img src="https://ip.trueachievements.com/remote/store-images.s-microsoft.com/image/apps.18967.66915708565277087.6939cc90-5cdd-45d0-b0cd-a485dca34280.4ef97b60-dd7e-4e1b-a4e6-975243388568?width=584" alt="Brawlhalla">
+                   <div class="overlay">
+                       <h2>Brawlhalla</h2>
+                       <a href="brawlhalla.html" class="button">View More</a>
+                   </div>
+               </div>
+               <div class="image-box">
+                   <img src="https://play-lh.googleusercontent.com/2_cnPPYxFuRP9EbpRV7GwaGnYwHaalogzdn4NuI7kreBqb9Zfq46Hnxa_dVZDV4uM_rp" alt="Fighting ExLayeR">
+                   <div class="overlay">
+                       <h2>Fighting ExLayeR</h2>
+                       <a href="fightingexlayer.html" class="button">View More</a>
+                   </div>
+               </div>
+               <div class="image-box">
+                   <img src="https://static1.srcdn.com/wordpress/wp-content/uploads/2017/02/For-Honor-Cover-Art-Portrait.jpg" alt="For Honor">
+                   <div class="overlay">
+                       <h2>For Honor</h2>
+                       <a href="for honor.html" class="button">View More</a>
+                   </div>
+               </div>
+               <div class="image-box">
+                   <img src="https://m.media-amazon.com/images/M/MV5BM2RhM2JhMTgtNzM1ZS00NjJkLThkMzAtMjgyYTMzZWFmM2NhXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Gang Beasts">
+                   <div class="overlay">
+                       <h2>Gang Beasts</h2>
+                       <a href="gang beasts.html" class="button">View More</a>
+                   </div>
+               </div>
+</div>
+    <div id="shooter" class="textt">
+    <h1>SHOOTER</h1>
+    </div>
+ <div class="gallery" >
+        <div class="image-box">
+            <img src="https://howlongtobeat.com/games/3657_Fortnite.jpg" alt="Fortnite">
+            <div class="overlay">
+                <h2>Fortnite</h2>
+                <a href="fortnite.html" class="button">View More</a>
+            </div>
+        </div>
+        <div class="image-box">
+            <img src="https://cdn1.epicgames.com/offer/cbd5b3d310a54b12bf3fe8c41994174f/EGS_VALORANT_RiotGames_S2_1200x1600-46207e34c7dd798d917b694420a4e46d" alt="Valorant">
+            <div class="overlay">
+                <h2>Valorant</h2>
+                <a href="valorant.html" class="button">View More</a>
+            </div>
+        </div>
+        <div class="image-box">
+            <img src="https://cdn1.epicgames.com/spt-assets/5dcd88f4e2094a698ebffa43438edc33/apex-legends-v4qf9.jpg" alt="Apex Legends">
+            <div class="overlay">
+                <h2>Apex Legends</h2>
+                <a href="apex.html" class="button">View More</a>
+            </div>
+        </div>
+        <div class="image-box">
+            <img src="https://cdn1.epicgames.com/spt-assets/53ec4985296b4facbe3a8d8d019afba9/pubg-battlegrounds-17zb2.png" alt="Pubg Battlegrounds">
+            <div class="overlay">
+                <h2>Pubg Battlegrounds</h2>
+                <a href="pubg.html" class="button">View More</a>
+            </div>
+        </div>
+        <div class="image-box">
+            <img src="https://m.media-amazon.com/images/M/MV5BN2EzNTg2MTMtYjA4Yi00ZmUzLWE5ZTktNDFiZGNmNjc0MTViXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Call of Duty: Warzone">
+            <div class="overlay">
+                <h2>Call of Duty: Warzone</h2>
+                <a href="codwarzone.html" class="button">View More</a>
+            </div>
+        </div> 
+            <div class="image-box">
+                <img src="https://m.media-amazon.com/images/M/MV5BOWRjN2FjYjMtNGIyOS00ZDVjLWFkZjItYzMxMmFmOTllZGEzXkEyXkFqcGdeQXVyNzQzNDM3NTI@._V1_.jpg" alt="Halo">
+                <div class="overlay">
+                    <h2>Halo Infinite</h2>
+                    <a href="halo infinite.html" class="button">View More</a>
+                </div>
+            </div>
+            <div class="image-box">
+                <img src="https://upload.wikimedia.org/wikipedia/en/6/63/Far_Cry_4_box_art.jpg" alt="Far Cry 4">
+                <div class="overlay">
+                    <h2>Far Cry 4</h2>
+                    <a href="farcry.html" class="button">View More</a>
+                </div>
+            </div>
+            <div class="image-box">
+                <img src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2024/12/mixcollage-07-dec-2024-07-26-am-2437.jpg" alt="Doom Eternal">
+                <div class="overlay">
+                    <h2>Doom Eternal</h2>
+                    <a href="doometernal.html" class="button">View More</a>
+                </div>
+            </div>
+            <div class="image-box">
+                <img src="https://static.driffle.com/fit-in/720x512/media-gallery/prod/168846656561466800_Rainbow_Six_siege_photo_2014-06-14_17-51.webp" alt="Tom Clancy's Rainbow Six Siege">
+                <div class="overlay">
+                    <h2>Tom Clancy's Rainbow Six Siege</h2>
+                    <a href="r6s.html" class="button">View More</a>
+                </div>
+            </div>
+            <div class="image-box">
+                <img src="https://upload.wikimedia.org/wikipedia/en/9/9f/Cyberpunk_2077_box_art.jpg" alt="Cyberpunk 2077">
+                <div class="overlay">
+                    <h2>Cyberpunk 2077</h2>
+                    <a href="cyberpunk2077.html" class="button">View More</a>
+                </div>
+            </div>
+ </div>
+ </div>
+    <div id="horror" class="textt">
+    <h1>HORROR</h1>
+    </div>
+ <div class="gallery" >
+            <div class="image-box">
+                <img src="https://m.media-amazon.com/images/M/MV5BZDI0Y2EyMzUtZmY0MC00MTdhLWIwYzMtZTdiNjI4NDRlZWZhXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="OUTLAST">
+                <div class="overlay">
+                    <h2>OUTLAST</h2>
+                    <a href="outlast.html" class="button">View More</a>
+                </div>
+            </div>
+            <div class="image-box">
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/b/ba/Left4Dead2.jpg/220px-Left4Dead2.jpg" alt="Left 4 Dead 2">
+                <div class="overlay">
+                    <h2>Left 4 Dead 2</h2>
+                    <a href="left4dead2.html" class="button">View More</a>
+                </div>
+            </div>
+            <div class="image-box">
+                <img src="https://upload.wikimedia.org/wikipedia/en/f/fd/Resident_Evil_2_Remake.jpg" alt="Resident Evil 2 Remake">
+                <div class="overlay">
+                    <h2>Resident Evil 2 Remake</h2>
+                    <a href="re2remake.html" class="button">View More</a>
+                </div>
+            </div>
+            <div class="image-box">
+                <img src="https://m.media-amazon.com/images/M/MV5BMGQwMzA4ODctN2VjNi00NTk2LWE5NzItOWJlYmM3NWUyNjZjXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Until Dawn">
+                <div class="overlay">
+                    <h2>Until Dawn</h2>
+                    <a href="untildawn.html" class="button">View More</a>
+                </div>
+            </div>
+            <div class="image-box">
+                <img src="https://upload.wikimedia.org/wikipedia/en/0/05/Five_Nights_at_Freddy%27s-_Security_Breach_Steam_Storefront.jpeg" alt="FNAF: Security Breach">
+                <div class="overlay">
+                    <h2>Five Nights at Freddy's: <br> Security Breach</h2>
+                    <a href="fnafsecuritybreach.html" class="button">View More</a>
+                </div>
+            </div>
+                <div class="image-box">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/5/56/The_Evil_Within_boxart.jpg" alt="The Evil Within">
+                    <div class="overlay">
+                        <h2>The Evil Within</h2>
+                        <a href="the evil withing.html" class="button">View More</a>
+                    </div>
+                </div>
+                <div class="image-box">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/1/1f/Alan_Wake_Game_Cover.jpg" alt="Alan Wake">
+                    <div class="overlay">
+                        <h2>Alan Wake</h2>
+                        <a href="alan wake.html" class="button">View More</a>
+                    </div>
+                </div>
+                <div class="image-box">
+                    <img src="https://image.api.playstation.com/cdn/EP0700/CUSA05952_00/cHwRJCrOnmqoNBGtMnYJjMeWZsEtTevGLrqI7dWLbP3UaquOi5WkRurFOAKqaBmc.png" alt="Little Nightmares">
+                    <div class="overlay">
+                        <h2>Little Nightmares</h2>
+                        <a href="littlenightmares.html" class="button">View More</a>
+                    </div>
+                </div>
+                <div class="image-box">
+                    <img src="https://m.media-amazon.com/images/M/MV5BOTY4NjY0ZDAtNjg5Mi00ZTIwLWJiYTYtYjllNmJlMzM1MGMyXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Silent Hill 2">
+                    <div class="overlay">
+                        <h2>Silent Hill 2</h2>
+                        <a href="silenthill2.html" class="button">View More</a>
+                    </div>
+                </div>
+                <div class="image-box">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/c/c0/Dying_Light_cover.jpg" alt="Dying Light">
+                    <div class="overlay">
+                        <h2>Dying Light</h2>
+                        <a href="dyinglight.html" class="button">View More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>  
+
+
+    <div id="action-adventure" class="textt">
+    <h1>ACTION-ADVENTURE</h1>
+    </div>
+ <div class="gallery" >
+
+    <div class="image-box">
+        <img src="https://upload.wikimedia.org/wikipedia/en/c/cb/Devil_May_Cry_5.jpg" alt="Devil May Cry 5">
+        <div class="overlay">
+            <h2>Devil May Cry 5</h2>
+            <a href="devilmaycry5.html" class="button">View More</a>
+        </div>
+    </div>
+    <div class="image-box">
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Monster_hunter_rise_cover.jpg/220px-Monster_hunter_rise_cover.jpg" alt="Monster Hunter: Rise">
+        <div class="overlay">
+            <h2>Monster Hunter: Rise</h2>
+            <a href="monsterhunterrise.html" class="button">View More</a>
+        </div>
+    </div>
+    <div class="image-box">
+        <img src="https://upload.wikimedia.org/wikipedia/en/0/0c/Witcher_3_cover_art.jpg" alt="Witcher 3: The Wild Hunt">
+        <div class="overlay">
+            <h2>Witcher 3: The Wild Hunt</h2>
+            <a href="witcher3.html" class="button">View More</a>
+        </div>
+    </div>
+    <div class="image-box">
+        <img src="https://upload.wikimedia.org/wikipedia/en/b/b9/Elden_Ring_Box_art.jpg" alt="Elden Ring">
+        <div class="overlay">
+            <h2>Elden Ring</h2>
+            <a href="eldenring.html" class="button">View More</a>
+        </div>
+    </div>
+    <div class="image-box">
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/2/2a/Assassins_Creed_brotherhood_cover.jpg/220px-Assassins_Creed_brotherhood_cover.jpg" alt="Assasin's Creed">
+        <div class="overlay">
+            <h2>Assasin's Creed: Brotherhood</h2>
+            <a href="assassinscreed.html" class="button">View More</a>
+        </div>
+    </div>
+
+        <div class="image-box">
+            <img src="https://content.konzolvilag.hu/dynamic_landings/diablo-4/diablo_IV_cover.png" alt="Diablo 4">
+            <div class="overlay">
+                <h2>Diablo 4</h2>
+                <a href="diablo4.html" class="button">View More</a>
+            </div>
+        </div>
+        <div class="image-box">
+            <img src="https://upload.wikimedia.org/wikipedia/en/c/c6/The_Legend_of_Zelda_Breath_of_the_Wild.jpg" alt="The Legend of Zelda: Breath of The Wild">
+            <div class="overlay">
+                <h2>The Legend of Zelda: <br> Breath of The Wild</h2>
+                <a href="thelegendofzelda.html" class="button">View More</a>
+            </div>
+        </div>
+        <div class="image-box">
+            <img src="https://m.media-amazon.com/images/M/MV5BNzNlYzZlMjgtMTk5Yy00YzJjLThkNWEtM2QyNGZiZGVkYWIxXkEyXkFqcGc@._V1_.jpg" alt="MINECRAFT">
+            <div class="overlay">
+                <h2>MINECRAFT</h2>
+                <a href="minecraft.html" class="button">View More</a>
+            </div>
+        </div>
+        <div class="image-box">
+            <img src="https://upload.wikimedia.org/wikipedia/en/a/a5/Grand_Theft_Auto_V.png" alt="Grand Theft Auto: V">
+            <div class="overlay">
+                <h2>Grand Theft Auto: V</h2>
+                <a href="grandtheftauto.html" class="button">View More</a>
+            </div>
+        </div>
+        <div class="image-box">
+            <img src="https://upload.wikimedia.org/wikipedia/en/2/21/Nier_Automata_cover_art.jpg" alt="NieR: Automata">
+            <div class="overlay">
+                <h2>NieR: Automata</h2>
+                <a href="nier.html" class="button">View More</a>
+            </div>
+        </div> 
+ </div>
+
+    <div id="rhythm" class="textt">
+    <h1>RHYTHM</h1>
+    </div>
+         <div class="gallery" >
+        
+            <div class="image-box">
+                <img src="https://upload.wikimedia.org/wikipedia/en/5/58/Beat_Saber_logo.jpg" alt="Beat Saber">
+                <div class="overlay">
+                    <h2>Beat Saber</h2>
+                    <a href="beatsaber.html" class="button">View More</a>
+                </div>
+            </div>
+            <div class="image-box">
+                <img src="https://www.speedrun.com/static/game/kdkn7xdm/cover.png?v=47fdfd9" alt="Osu!">
+                <div class="overlay">
+                    <h2>Osu!</h2>
+                    <a href="osu!.html" class="button">View More</a>
+                </div>
+            </div>
+            <div class="image-box">
+                <img src="https://m.media-amazon.com/images/M/MV5BY2Y1MTRiYTAtZjY5Zi00ZjgxLTlkZTQtNWE3MjBhOWJiMzJhXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Muse Dash">
+                <div class="overlay">
+                    <h2>Muse Dash</h2>
+                    <a href="musedash.html" class="button">View More</a>
+                </div>
+            </div>
+            <div class="image-box">
+                <img src="https://m.media-amazon.com/images/M/MV5BOGI0MzY4YmQtZjYzZi00Yjc3LTgyZWEtZGRjOGMyNDBjZWY2XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Guitar Hero">
+                <div class="overlay">
+                    <h2>Guitar Hero</h2>
+                    <a href="guitarhero.html" class="button">View More</a>
+                </div>
+            </div>
+            <div class="image-box">
+                <img src="https://upload.wikimedia.org/wikipedia/en/a/ac/JD25EditionBoxart.webp" alt="Just Dance">
+                <div class="overlay">
+                    <h2>Just Dance</h2>
+                    <a href="justdance.html" class="button">View More</a>
+                </div>
+            </div>
+        
+                <div class="image-box">
+                    <img src="https://www.film.ru/sites/default/files/styles/thumb_260x400/public/game/covers/2978b7ce0d73aa6693e1d32f8d3291c7.jpg" alt="Dance Dance Revolution">
+                    <div class="overlay">
+                        <h2>Dance Dance Revolution</h2>
+                        <a href="hextechmayhem.html" class="button">View More</a>
+                    </div>
+                </div>
+                <div class="image-box">
+                    <img src="https://platform.polygon.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/22998918/210820_HextechMayhem_KA_Master_RGB.jpg?quality=90&strip=all&crop=18.75,0,62.5,100" alt="Hextech Mayhem: A League of Legends Story">
+                    <div class="overlay">
+                        <h2>Hextech Mayhem: <br> A League of Legends Story</h2>
+                        <a href="dancerevolution.html" class="button">View More</a>
+                    </div>
+                </div>
+                <div class="image-box">
+                    <img src="https://img.poki-cdn.com/cdn-cgi/image/quality=78,width=1200,height=1200,fit=cover,f=png/0cd0c8bc4dc15c069dba7ccfb6809f6d.png" alt="FRIDAY NIGHT FUNKIN'">
+                    <div class="overlay">
+                        <h2>FRIDAY NIGHT FUNKIN'</h2>
+                        <a href="fridaynightfunkin.html" class="button">View More</a>
+                    </div>
+                </div>
+                <div class="image-box">
+                    <img src="https://m.media-amazon.com/images/M/MV5BNjIzN2YwYmMtYzU4Mi00M2U1LTgyM2ItMzM3MTI0MTVmY2M0XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Geometry Dash">
+                    <div class="overlay">
+                        <h2>Geometry Dash</h2>
+                        <a href="geometrydash.html" class="button">View More</a>
+                    </div>
+                </div>
+                <div class="image-box">
+                    <img src="https://m.media-amazon.com/images/M/MV5BZjdjMzM3ZTItNzdlOC00OGEyLWFmZDAtMTM3MDIxMGJjOGQyXkEyXkFqcGc@._V1_.jpg" alt="Just Shapes & Beats">
+                    <div class="overlay">
+                        <h2>Just Shapes & Beats</h2>
+                        <a href="justshapesandbeats.html" class="button">View More</a>
+                    </div>
+                </div>
+            </div>
+            <div id="gacha" class="textt">
+                <h1>GACHA</h1>
+            </div>
+             <div class="gallery" >
+            
+                <div class="image-box">
+                    <img src="https://cdn1.epicgames.com/offer/879b0d8776ab46a59a129983ba78f0ce/genshintall_1200x1600-4a5697be3925e8cb1f59725a9830cafc" alt="Genshin Impact">
+                    <div class="overlay">
+                        <h2>Genshin Impact</h2>
+                        <a href="Genshin.html" class="button">View More</a>
+                    </div>
+                </div>
+                <div class="image-box">
+                    <img src="https://cdn2.steamgriddb.com/icon_thumb/e52da5a31de788599378924f0e639557.png" alt="Honkai Star Rail">
+                    <div class="overlay">
+                        <h2>Honkai Star Rail</h2>
+                        <a href="hsr.html" class="button">View More</a>
+                    </div>
+                </div>
+                <div class="image-box">
+                    <img src="https://cdn2.steamgriddb.com/icon_thumb/7029a498c4f596f73b35504df9bab02a.png" alt="Zenless Zone Zero">
+                    <div class="overlay">
+                        <h2>Zenless Zone Zero</h2>
+                        <a href="zzz.html" class="button">View More</a>
+                    </div>
+                </div>
+                <div class="image-box">
+                    <img src="https://cdn2.steamgriddb.com/icon/b81280cd90bc1a6cfbb1183a61abc1d8/32/256x256.png" alt="Honkai Impact 3rd">
+                    <div class="overlay">
+                        <h2>Honkai Impact 3rd</h2>
+                        <a href="hi3.html" class="button">View More</a>
+                    </div>
+                </div>
+                <div class="image-box">
+                    <img src="https://picfiles.alphacoders.com/242/thumb-242053.png" alt="Azur Lane">
+                    <div class="overlay">
+                        <h2>Azur Lane</h2>
+                        <a href="Azur lane.html" class="button">View More</a>
+                    </div>
+                </div>
+                    <div class="image-box">
+                        <img src="https://cdn2.steamgriddb.com/thumb/9cc0716a65678b1053cdf9bf281807c2.jpg" alt="Wuthering Waves">
+                        <div class="overlay">
+                            <h2>Wuthering Waves</h2>
+                            <a href="wuwa.html" class="button">View More</a>
+                        </div>
+                    </div>
+                    <div class="image-box">
+                        <img src="https://cdn2.steamgriddb.com/icon_thumb/eb3e78a6d08bc2aad5ab094608a71c77.png" alt="DB legends">
+                        <div class="overlay">
+                            <h2>DragonBall Legends</h2>
+                            <a href="dbl.html" class="button">View More</a>
+                        </div>
+                    </div>
+                    <div class="image-box">
+                        <img src="https://sm.ign.com/ign_ms/cover/p/punishing-/punishing-gray-raven_j8b6.jpg" alt="PGR">
+                        <div class="overlay">
+                            <h2>Punishing Gray Raven</h2>
+                            <a href="pgr.html" class="button">View More</a>
+                        </div>
+                    </div>
+                    <div class="image-box">
+                        <img src="https://www.speedrun.com/static/game/4d7gqzd7/cover.png?v=45110f7" alt="FGO">
+                        <div class="overlay">
+                            <h2>Fate Grand Order</h2>
+                            <a href="fgo.html" class="button">View More</a>
+                        </div>
+                    </div>
+                    <div class="image-box">
+                        <img src="https://www.speedrun.com/static/game/lde387j6/cover.png?v=c14dc3c" alt="Arknights">
+                        <div class="overlay">
+                            <h2>Arknights</h2>
+                            <a href="Arknights.html" class="button">View More</a>
+                        </div>
+                    </div>
+                </div>
+                <div id="moba" class="textt">
+                    <h1>MOBA</h1>
+                </div>
+                 <div class="gallery" >
+                
+                    <div class="image-box">
+                        <img src="https://mediaproxy.tvtropes.org/width/1200/https://static.tvtropes.org/pmwiki/pub/images/leagueoflegends.png" alt="LOL">
+                        <div class="overlay">
+                            <h2>League of legends</h2>
+                            <a href="lol.html" class="button">View More</a>
+                        </div>
+                    </div>
+                    <div class="image-box">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/3/31/Dota_2_Steam_artwork.jpg" alt="Dota ">
+                        <div class="overlay">
+                            <h2>Dota 2</h2>
+                            <a href="dota2.html" class="button">View More</a>
+                        </div>
+                    </div>
+                    <div class="image-box">
+                        <img src="https://image.api.playstation.com/vulcan/ap/rnd/202301/2322/CM072lQwXunn2Z23lGXtpw4A.png?w=440" alt="Smite">
+                        <div class="overlay">
+                            <h2>Smite</h2>
+                            <a href="smite.html" class="button">View More</a>
+                        </div>
+                    </div>
+                    <div class="image-box">
+                        <img src="https://images.igdb.com/igdb/image/upload/t_cover_big/co7lqm.webp" alt="MLBB">
+                        <div class="overlay">
+                            <h2>Mobile legends: Bang Bang</h2>
+                            <a href="mlbb.html" class="button">View More</a>
+                        </div>
+                    </div>
+                    <div class="image-box">
+                        <img src="https://dy0l2bf2dv7h2.cloudfront.net/d76204eb-1774-417d-aec4-21027949b5fa.jpg" alt="Brawl Stars">
+                        <div class="overlay">
+                            <h2>Brawl Stars</h2>
+                            <a href="brawlstars.html" class="button">View More</a>
+                        </div>
+                    </div>
+                </div>
+               
+                <div id="platformer" class="textt">
+                    <h1>PLATFORMER</h1>
+                </div>
+                 <div class="gallery" >
+                
+                    <div class="image-box">
+                        <img src="https://cdn2.steamgriddb.com/thumb/b9f8b0ba67bdc0d1a1c318528ac08b9b.jpg" alt="Crash Bandicoot 4: It's About Time">
+                        <div class="overlay">
+                            <h2>Crash Bandicoot 4: <br> It's About Time</h2>
+                            <a href="cb4.html" class="button">View More</a>
+                        </div>
+                    </div>
+                    <div class="image-box">
+                        <img src="https://cdn2.steamgriddb.com/thumb/25dcf1554f13c36b512dfe907acc77d3.jpg" alt="Cuphead">
+                        <div class="overlay">
+                            <h2>Cuphead</h2>
+                            <a href="cuphead.html" class="button">View More</a>
+                        </div>
+                    </div>
+                    <div class="image-box">
+                        <img src="https://cdn2.steamgriddb.com/icon_thumb/676207ddcc8087437135a4b461fc07cb.png" alt="Super Mario Odyssey">
+                        <div class="overlay">
+                            <h2>Super Mario Odyssey</h2>
+                            <a href="supersmashbros.html" class="button">View More</a>
+                        </div>
+                    </div>
+                    <div class="image-box">
+                        <img src="https://www.nintendo.com/eu/media/images/11_square_images/games_18/nintendo_switch_5/1x1_NSwitch_SonicXShadowGenerations_image500w.jpg" alt="Sonic X Shadow Generations">
+                        <div class="overlay">
+                            <h2>Sonic X Shadow Generations</h2>
+                            <a href="sonic.html" class="button">View More</a>
+                        </div>
+                    </div>
+                    <div class="image-box">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/0/04/Hollow_Knight_first_cover_art.webp" alt="Hollow Knight">
+                        <div class="overlay">
+                            <h2>Brawl Stars</h2>
+                            <a href="brawlstars.html" class="button">View More</a>
+                        </div>
+                    </div>
+                 </div> 
+                 
+                 <footer>
+                    <p style="color: whitesmoke; font-size: 2vb;">Disclaimer: All the images used are for educational purposes only. All rights reserved to the owners of the images used.
+                    </p>
+                </footer>
+                
+                 <script>
+                    document.addEventListener("DOMContentLoaded", function () {
+                        // Handle genre button clicks for smooth scrolling
+                        const genreButtons = document.querySelectorAll(".genre");
+            
+                        genreButtons.forEach(button => {
+                            button.addEventListener("click", function () {
+                                const targetId = this.getAttribute("data-target");
+                                const targetSection = document.getElementById(targetId);
+            
+                                if (targetSection) {
+                                    window.scrollTo({
+                                        top: targetSection.offsetTop - 50, // Adjust for header height
+                                        behavior: "instant"
+                                    });
+                                }
+                            });
+                        });
+            
+                        let games = {
+                            //action
+    "Devil May Cry 5": "devilmaycry5.html",
+    "Monster Hunter: Rise": "monsterhunterrise.html",   
+    "Witcher 3: The Wild Hunt": "witcher3.html",
+    "Elden Ring": "eldenring.html",
+    "Assassin's Creed: Brotherhood": "assassinscreed.html", 
+    "Diablo 4": "diablo4.html",
+    "The Legend of Zelda: Breath of The Wild": "thelegendofzelda.html",
+    "Minecraft": "minecraft.html", 
+    "GTA: V": "grandtheftauto.html",
+    "NieR: Automata": "nier.html",  
+//fighting
+    "Tekken 8": "Tekken 8.html",
+    "Street Fighter 6": "Street Fighter 6.html",
+    "Blazblue": "blazblue.html",
+    "Guilty Gear Strive": "guiltygear.html",  
+    "King of Fighters XV": "kofxv.html",
+    "super smash bros ultimate": "supersmashbros.html",
+    "Mortal Kombat 1": "mk1.html",
+    "persona 4 arena": "p4arena.html",
+    "Dragon Ball FighterZ": "dragonballfigtherZ.html",
+    "Soul Calibur VI": "soul calibur 6.html",
+    "Gang Beasts": "gang beasts.html",
+    "Naruto Shippuden: Ultimate Ninja Storm 4": "naruto ultimate ninja.html",
+    "skullgirls": "skullgirls.html",
+    "stick fight": "stickfight.html",
+    "Brawlhalla": "brawlhalla.html",
+    "Marvel vs Capcom Infinite": "marvel vs capcom.html",
+    "Samurai Shodown": "samurai showdown.html",   
+    "Shadow Fight 2": "shadowfight2.html",  
+    "fighting ex layer": "fightingexlayer.html", 
+    "for honor": "for honor.html",
+//gacha
+"Genshin Impact": "genshin.html", 
+"Honkai Star Rail": "hsr.html",
+"Zenless Zone Zero": "zzz.html",
+"Honkai Impact 3rd": "hi3.html",
+"Azur Lane": "Azur lane.html",     
+"Wuthering Waves": "wuwa.html",  
+"DragonBall Legends": "dbl.html",   
+"Punishing Gray Raven": "pgr.html",
+"Fate Grand Order": "fgo.html",
+"Arknights": "Arknights.html",
+//horror
+"OUTLAST": "outlast.html",
+"Left 4 Dead 2": "left4dead2.html",
+"Resident Evil 2 Remake": "re2remake.html",
+"Until Dawn": "untildawn.html",
+"Five Nights at Freddy's: Security Breach": "fnafsecuritybreach.html",
+"The Evil Within": "the evil withing.html",
+"Alan Wake": "alan wake.html",  
+"Little Nightmares": "littlenightmares.html",
+"Silent Hill 2": "silenthill2.html",
+"Dying Light": "dyinglight.html",
+//moba+platformer
+"League of legends": "lol.html",
+"Dota 2": "dota2.html", 
+"Smite": "smite.html",
+"Mobile legends: Bang Bang": "mlbb.html",
+"Brawl Stars": "brawlstars.html",
+"Crash Bandicoot 4: It's About Time": "cb4.html",
+"Cuphead": "cuphead.html",
+"Super Mario Odyssey": "mario.html",
+"Sonic X Shadow Generations": "sonic.html",
+"Hollow Knight": "hollowknight.html",
+//rhythm    
+"Beat Saber": "beatsaber.html",
+"Osu!": "osu!.html", 
+"Muse Dash": "musedash.html",       
+"Guitar Hero": "guitarhero.html",
+"Just Dance": "justdance.html",
+"Dance Dance Revolution": "ddr.html", 
+"Hextech Mayhem: A League of Legends Story": "hextech.html",
+"FRIDAY NIGHT FUNKIN'": "fridaynightfunkin.html",
+"Geometry Dash": "geometrydash.html",
+"Just Shapes & Beats": "justshapesandbeats.html", 
+//shooter
+"Call of Duty: Warzone": "codwarzone.html",
+"Valorant": "valorant.html",
+"apex legends": "apex.html",
+"playerunknown's battlegrounds": "pubg.html",
+"fortnite": "fortnite.html",
+"halo infinite": "halo infinite.html",
+"far cry 4": "farcry.html",
+"doom eternal": "doometernal.html",
+"tom clancy's rainbow six siege": "r6s.html",   
+"cyberpunk 2077": "cyberpunk2077.html",
+//sports    
+"nba 2k14": "nba2k14.html",
+"nba 2k15": "nba2k15.html", 
+"nba 2k16": "nba2k16.html",
+"nba 2k17": "nba2k17.html", 
+"nba 2k18": "nba2k18.html", 
+"nba 2k19": "nba2k19.html",
+"nba 2k20": "nba2k20.html", 
+"nba 2k21": "nba2k21.html",
+"nba 2k22": "nba2k22.html",
+"nba 2k23": "nba2k23.html",
+"Asphalt Legends": "asphalt.html",
+"Need for Speed: most wanted": "NeedforSpeed.html", 
+"Need for Speed: Underground": "Nfsunderground.html",
+"Real Boxing": "realboxing.html",
+"FIFA FC25": "fc25.html",
+"Golf Spin": "golfit.html",
+"Top Spin 2K25": "topspin.html",
+"tony hawk's pro skater 2": "tonyhawk.html",  
+"RUGBY 2K25": "rugby25.html",
+"F1 24": "F124.html", 
+
+
+
+
+};
+
+// Search function
+function searchGame(event) {
+    event.preventDefault(); // Prevent page reload
+
+    let searchQuery = document.getElementById("search-input").value.toLowerCase().trim();
+
+    // Use Object.keys to normalize case-insensitive search
+    let gameKey = Object.keys(games).find(game => game.toLowerCase() === searchQuery);
+
+    if (gameKey) {
+        window.location.href = games[gameKey]; // Redirect to game page
+    } else {
+        alert("Game not found. Try a different search.");
+    }
+}
+
+// Show suggestions while typing
+function showSuggestions() {
+    let input = document.getElementById("search-input");
+    let suggestionsBox = document.getElementById("suggestions");
+    let inputValue = input.value.toLowerCase().trim();
+
+    // Clear previous suggestions
+    suggestionsBox.innerHTML = "";
+
+    if (inputValue.length === 0) {
+        suggestionsBox.style.display = "none";
+        return;
+    }
+
+    let matches = Object.keys(games).filter(game => game.toLowerCase().includes(inputValue));
+
+    if (matches.length > 0) {
+        suggestionsBox.style.display = "block";
+
+        matches.forEach(match => {
+            let suggestion = document.createElement("div");
+            suggestion.textContent = match;
+            suggestion.addEventListener("click", function () {
+                input.value = match;
+                suggestionsBox.style.display = "none";
+            });
+            suggestionsBox.appendChild(suggestion);
+        });
+    } else {
+        suggestionsBox.style.display = "none";
+    }
+}
+
+// Hide suggestions when clicking outside
+document.addEventListener("click", function (event) {
+    let suggestionsBox = document.getElementById("suggestions");
+    let searchInput = document.getElementById("search-input");
+
+    if (event.target !== searchInput && !suggestionsBox.contains(event.target)) {
+        suggestionsBox.style.display = "none";
+    }
+});
+            
+                        // Handle search submission
+                        document.querySelector(".search-container").addEventListener("submit", searchGame);
+                        document.getElementById("search-input").addEventListener("input", showSuggestions);
+            
+                        // Toggle navigation menu when clicking hamburger
+                        const hamburger = document.querySelector(".hamburger");
+                        const navContainer = document.querySelector(".nav-container");
+            
+                        hamburger.addEventListener("click", function () {
+                            navContainer.classList.toggle("active");
+                        });
+                    });
+
+                    let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+                </script>
+</body>
+</html>
